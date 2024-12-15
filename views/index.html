@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hello, World!</title>
+</head>
+
+<body>
+  <h1 class="title">ADD A REVIEW</h1>
+  <form   id="appointmentForm" onsubmit="handleFormSubmit(event)" accept-charset="utf-8">
+    COMPANY NAME:
+    </BR>
+    <input type="text" name="companyname" id="companyname" value="" />
+    </br>
+    </br>
+    PROS:
+    <input type="text" name="pros" id="pros" value="" style="font-size:10pt;height:55px;width:120px;">
+    </br>
+    </br>
+    CONS:
+    <input type="text" name="cons" id="cons" value="" style="font-size:10pt;height:55px;width:120px;" />
+    
+    <div class="rating">
+
+      <input type="radio" name="rating" id="rate1" value="1" required>
+
+      <label for="rate1">★</label>
+
+      <input type="radio" name="rating" id="rate2" value="2">
+
+      <label for="rate2">★</label>
+
+      <input type="radio" name="rating" id="rate3" value="3">
+
+      <label for="rate3">★</label>
+
+      <input type="radio" name="rating" id="rate4" value="4">
+
+      <label for="rate4">★</label>
+
+
+      <input type="radio" name="rating" id="rate5" value="5">
+
+      <label for="rate5">★</label>   
+    </div>
+      <button type="submit"> SUBMIT REVIEW</button>
+ 
+  </form>
+  </br>
+  </br>
+  </br>
+  </br>
+  <h4> search for reviews below
+  </h4>
+  <div id="searcharea">
+    <form class="submit"  onsubmit="searchformsubmit(event)" method="get" accept-charset="utf-8">
+      <input type="text" name="companyname" id="companyname" value="" />
+      <button type="submit"> SUBMIT</button>
+    </form>
+  </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+<script src="/script.js"></script>
+
+</html>
